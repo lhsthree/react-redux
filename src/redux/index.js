@@ -1,6 +1,7 @@
 import countReducer from "./count"
 import favoriteThingsReducer from "./favoriteThings"
 import youTubeVideoReducer from "./youTubeVideo"
+import userReducer from "./user"
 
 
 const redux = require("redux")
@@ -11,7 +12,8 @@ const {combineReducers, createStore} = redux
 const rootReducer = combineReducers({
 	count: countReducer,
 	favoriteThings: favoriteThingsReducer,
-	youTubeVideo: youTubeVideoReducer
+	youTubeVideo: youTubeVideoReducer,
+	user: userReducer
 })
 
 const store = createStore(rootReducer)
